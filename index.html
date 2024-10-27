@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+                    background-image: url('https://n.sinaimg.cn/sinakd10100/400/w1280h720/20220218/6833-1488ad07f89033d62e52029ee7b46705.jpg'); /* 替换为你的图片路径 */
+                    background-size: cover; /* 使背景图像覆盖整个页面 */
+                    background-repeat: no-repeat; /* 不重复背景图像 */
+                    background-position: center; /* 将背景图像置于中央 */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+			
+
+        }
+        .section {
+            width: 45%; /* 设置容器宽度为80% */
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .section h2 {
+            color: #333;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+		.my-image {
+		            width: 300px; /* 设置宽度为300px */
+		            height: auto; /* 高度自动调整，以保持纵横比 */
+		            border: 2px solid #ccc; /* 可选：添加边框 */
+		            border-radius: 8px; /* 可选：添加圆角 */
+		        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的主页</h1>
+</header>
+
+<div class="container">
+    <!-- 图片区块 -->
+    <div class="section">
+        <h2>我的喜爱图片</h2>
+        <img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768895f69eab9668ef3.93733559.png" alt="喜欢的图片" class="my-image">
+		<img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768915f69eabbbf20d0.87393375.gif" alt="喜欢的图片" class="my-image">
+		<img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768915f69eabb47bdb9.94615796.gif" alt="喜欢的图片" class="my-image">
+		<img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768905f69eabac2d0c4.19912403.gif" alt="喜欢的图片" class="my-image">
+		<img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768905f69eaba493be4.86663118.gif" alt="喜欢的图片" class="my-image">
+		<img src="https://img.clinicmed.net/uploadimg/image/20200922/16007768895f69eab9d3c7f2.37342134.gif" alt="喜欢的图片" class="my-image">
+	</div>
+
+    <!-- 音乐区块 -->
+    <div class="section">
+        <h2>我的喜爱音乐</h2>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1495837996&auto=1&height=66" title="网易云音乐1"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1871154900&auto=1&height=66" title="网易云音乐2"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1818031620&auto=1&height=66" title="网易云音乐3"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=760533&auto=1&height=66" title="网易云音乐4"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2071452224&auto=1&height=66" title="网易云音乐5"></iframe>
+	</div>
+
+    <!-- 表单区块 -->
+    <div class="section">
+        <h2>联系我</h2>
+        <form action="#">
+            <label for="name">姓名:</label><br>
+            <input type="text" id="name" name="name" placeholder="请输入你的姓名"><br><br>
+            <label for="email">邮箱:</label><br>
+            <input type="email" id="email" name="email" placeholder="请输入你的邮箱"><br><br>
+            <label for="message">留言:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="请输入留言内容"></textarea><br><br>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+    <!-- 按钮区块 -->
+    <div class="section button-container">
+        <h2>其他</h2>
+        <button onclick="alert('关于我按钮被点击')">关于我</button>
+        <button onclick="alert('下载按钮被点击')">下载</button>
+		<h2>好康的</h2>
+		<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113182488134610&bvid=BV1HCsyeUEnR&cid=25965103956&p=1" title="哔哩哔哩视频1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+		<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1106115503&bvid=BV1Dw4m1a72z&cid=1608728345&p=1" title="哔哩哔哩视频2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+	</div>
+</div>
+
+</body>
+</html>
